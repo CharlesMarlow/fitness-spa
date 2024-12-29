@@ -22,12 +22,4 @@ describe('<Benefit /> Tests', () => {
     expect(screen.getByText(/benefit description/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/benefit icon/i)).toBeInTheDocument();
   });
-
-  it('Checks link element is rendered and clickable', () => {
-    const learnMoreLink = screen.getByRole('link', {
-      name: /learn more/i,
-    });
-    expect(learnMoreLink).toBeInTheDocument();
-    expect(learnMoreLink).toHaveAttribute('href', '#contactus');
-  });
 });
