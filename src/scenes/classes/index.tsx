@@ -68,8 +68,8 @@ const Classes = ({ setSelectedPage }: ClassesProps) => {
             <p className="py-5">{t('common.filler')}</p>
           </div>
         </motion.div>
-        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-          <ul className="w-[2800px] whitespace-nowrap">
+        <div className="mt-10 h-[22.063rem] w-full overflow-x-auto overflow-y-hidden">
+          <ul className="w-[175rem] whitespace-nowrap">
             {classes.map((item: ClassType, index) => (
               <Class
                 key={`${item.name}-${index}`}

@@ -15,7 +15,7 @@ type HomeProps = {
 };
 
 const Home = ({ setSelectedPage }: HomeProps) => {
-  const isAboveMediumScreens = useMediaQuery('(min-width:1060px)');
+  const isAboveMediumScreens = useMediaQuery('(min-width: 66.25rem)');
   const { t } = useTranslation();
 
   return (
@@ -84,7 +84,7 @@ const Home = ({ setSelectedPage }: HomeProps) => {
 
       {/* SPONSORS */}
       {isAboveMediumScreens && (
-        <div className="h-[150px] w-full bg-primary-100 py-10">
+        <div className="h-[9.375rem] w-full bg-primary-100 py-10">
           <div className="mx-auto w-5/6">
             <div className="flex items-center justify-around gap-8">
               <img alt="redbull-sponsor" src={SponsorRedBull} />
